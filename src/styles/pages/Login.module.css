@@ -1,0 +1,110 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem 0;
+    background: var(--blue);
+    display: flex;
+}
+
+.login > img {
+    margin-right: 7.5rem;
+}
+
+.login div form {
+    margin-top: 6rem;
+}
+
+.login div form > strong {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.login div form div:nth-child(2) { 
+    width: 318px;
+    height: 60px;
+    margin: 1.5rem 0 2.5rem;
+    display: flex;
+}
+
+.login div form div:nth-child(2) img {
+    margin-right: 1.5rem;
+}
+
+.login div form div:nth-child(2) p {
+    font-size: 1.25rem;
+    line-height: 30px;
+    color: var(--text-highlight);
+}
+
+
+.login div form div:nth-child(3) {
+    height: 80px;
+    display: flex;
+}
+
+.login div form div:nth-child(3) input[type=text] {
+    border-radius: 5px 0 0 5px;
+    padding: 0 0.4rem 0 1.875rem;
+    background: transparent;
+    border: 1.5px solid transparent;   
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #FFF;
+    background: linear-gradient(90deg, var(--blue-dark) 0%, rgba(73, 83, 184, 0.2) 100%);
+}
+
+.login div form div:nth-child(3) input[type=text]::placeholder {
+    color: var(--text-highlight);
+} 
+
+.login div form div:nth-child(3) input[type=text]:hover {
+    border: 1.5px solid #414AA3;
+}
+
+.login div form div:nth-child(3) input[type=text]:focus {
+    border: 1.5px solid #414AA3;
+}
+
+.login div form div:nth-child(3) input[type=text]:focus::placeholder {
+    color: transparent;
+  }
+
+.login div form div:nth-child(3) button {
+    width: 80px;
+    border: none;
+    background: var(--blue-dark);
+    border-radius: 0 5px 5px 0;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.login div form div:nth-child(3) button:disabled {
+    cursor: not-allowed;
+}
+
+.login div form div:nth-child(3) button:not(:disabled) :hover{
+    background: var(--green);
+}
+
+.login div form div:nth-child(3) button.activeButton {
+    background: var(--green);
+}
+
+.login div form div:nth-child(3) button .loading {
+    animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

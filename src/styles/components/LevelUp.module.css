@@ -1,0 +1,82 @@
+.levelUpModal_overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: var(--modal-overlay);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 1;
+}
+
+.levelUpModal_overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.levelUpModal {
+    background: linear-gradient(180deg, var(--white) 0%, var(--white) 100%);
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 3rem 3.125rem 2.5rem;   
+    text-align: center; 
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.levelUpModal header {
+    font-size: 8.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #5965E0;
+    text-shadow: 0px 10px 16px rgba(89, 101, 224, 0.3);
+    background: url('/icons/levelup.svg') no-repeat center;
+    background-size: contain;
+    margin-bottom: 1.5rem;
+}
+
+.levelUpModal strong {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: var(--title);
+    line-height: 40px;
+}
+
+.levelUpModal p {
+    font-size: 1.25rem;
+    color: var(--text);
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+.levelUpModal button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border: none;
+    background: none;
+    font-size: 0px;
+}
+
+.levelUpModal a.shareTwitter {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background: var(--blue-twitter);
+    color: var(--white);
+    font-weight: 600;
+    padding: 0 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

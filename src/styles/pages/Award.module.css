@@ -1,0 +1,93 @@
+.leaderboard h2 {
+    font-size: 2.25rem;
+    line-height: 46px;
+    font-weight: 600;
+    color: var(--title);
+    margin-bottom: 2.5rem;
+}
+
+.leaderboard table {
+    width: 100%;
+    color: var(--text);
+    border-spacing: 0 8px;
+    margin-bottom: 2rem;
+}
+
+.leaderboard table thead {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+}
+
+.leaderboard table thead tr th {
+    padding-bottom: 1rem;
+}
+
+.leaderboard table thead tr th:nth-child(2) {
+    padding-left: 1.5rem; 
+} 
+
+.leaderboard table tbody tr {
+    background: var(--white);
+}
+
+.leaderboard table tbody tr td:nth-child(1) {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.leaderboard table tbody tr td:nth-child(2) {
+    padding: 1rem 1rem 1rem 1.5rem;
+}
+
+.leaderboard table tbody tr td:nth-child(2) div {
+    display: flex;
+    align-items: center;
+}
+
+.leaderboard table tbody tr td:nth-child(2) div img {
+    width: 64px;
+    border-radius: 50%;
+}
+
+.leaderboard table tbody tr td:nth-child(2) div div {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.leaderboard table tbody tr td:nth-child(2) div div strong {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--title);
+}
+
+.leaderboard table tbody tr td:nth-child(2) div div p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text);
+} 
+
+.leaderboard table tbody tr td:nth-child(2) div div p img {
+    width: 14px;
+    margin: 0.5rem 0.5625rem 0 0;
+}
+
+.leaderboard table tbody tr td:nth-child(3) span,
+.leaderboard table tbody tr td:nth-child(4) span {
+    color: var(--blue);
+}
+
+.leaderboard table tbody tr td:first-child {
+    border-radius: 5px 0 0 5px;
+    border-right: 4px;
+    border-right-color: var(--background);
+    border-right-style: solid; 
+}
+
+.leaderboard table tbody tr td:last-child {
+    border-radius: 0 5px 5px 0;
+}

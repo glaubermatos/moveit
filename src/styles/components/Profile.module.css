@@ -1,0 +1,49 @@
+.profileContainer {
+    display: flex;
+    align-items: center;
+    /* margin-top: 6.875rem;*/
+
+}
+
+.profileContainer > img {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+}
+
+.profileContainer section {
+    flex: 1;
+    margin-left: 1.4375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profileContainer section strong {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--title);
+}
+
+.profileContainer section > div:nth-child(2) {
+    width: 100%;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileContainer section div p {
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.profileContainer section div p img {
+    margin-right: 0.5625rem;
+}
+
+.profileContainer section div p span {
+    margin-left: 0.5rem;
+}

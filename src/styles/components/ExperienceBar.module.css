@@ -1,0 +1,54 @@
+/* ExperienceBar ================*/
+.experienceBar {
+    display: flex;
+    align-items: center;
+}
+
+.experienceBar span {
+    font-size: 1rem;
+}
+
+.experienceBar > div {
+    flex: 1;
+    height: 4px;
+    background: var(--gray-line);
+    border-radius: 4px;
+    margin: 0 1.5rem;
+    position: relative;
+}
+
+.experienceBar > div > div {
+    height: 4px;
+    background: var(--green);
+    border-radius: 4px;
+    transition: width 2s ;
+}
+
+.experienceBar span.currentExperience {
+    background: var(--green);
+    color: var(--white);
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    padding: 0.125rem 0.5rem;
+    position: absolute;
+    top: 14px;
+    transform: translateX(-50%);
+    transition: left 0.8s;
+    white-space: nowrap;
+}
+
+.experienceBar span.currentExperience::after {
+    content: "";
+    width: 0;
+    height: 0;
+
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid var(--green);
+    
+    position: absolute;
+    top: -5px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}

@@ -1,0 +1,77 @@
+.sidebar {
+    width: 112px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--white) 0%, var(--background) 100%);
+    
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+
+    padding: 2rem 0;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar ul li {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sidebar ul li.active {
+    color: var(--blue);
+}
+
+.sidebar ul li.active::before {
+    content: '';
+    height: 56px;
+    width: 4px;
+    border-radius: 0 5px 5px 0;
+    background: var(--blue);
+    position: absolute;
+    left: 0;
+}
+
+.sidebar ul li:not(.active) {
+    opacity: 0.8;
+}
+
+.sidebar ul li:not(.active):hover {
+    opacity: 1;
+    color: var(--blue);
+}
+
+.sidebar ul li:not(.active):hover::before {
+    content: '';
+    height: 100%;
+    width: 4px;
+    border-radius: 0 5px 5px 0;
+    background: var(--blue);
+    position: absolute;
+    left: 0;
+}
+
+.sidebar ul:nth-child(2) li:first-child {
+    margin-bottom: 1rem;
+}
+
+.sidebar a {
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    color: var(--blue);
+}
